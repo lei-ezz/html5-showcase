@@ -1,8 +1,9 @@
 body {
-    background: #12458c;
+    background: #bfdcdd;
     margin: 0rem;
     padding: 0px;
     height: 100vh;
+    overflow: hidden; /* Hide scrollbars */
     font-family: -apple-system, BlinkMacSystemFont,
               "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
               "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -10,10 +11,10 @@ body {
       display: grid;
       grid-gap: 0.1vw;
       grid-template-columns: 13.5rem 1fr;
-      grid-template-rows: 6rem 1fr 3rem;
+      grid-template-rows: 5.5rem 1fr 2rem;
       grid-template-areas: "header   header"
                            "sidebar content"
-                           "footer footer"; 
+                           "footer footer";
      
   }
 
@@ -24,11 +25,11 @@ body {
     padding-bottom: 1px;
     display: grid;
     color: #fff;
-    border-style: solid; 
-    border-width: 2px;
+    background: rgb(221, 184, 224);
   }
   
   header h2{
+    font-size: 2rem;
     align-self: center;
     justify-self: center;  
   }
@@ -36,24 +37,38 @@ body {
   aside{
     grid-area: sidebar;
     float: left;
-    /*width: 130px;*/
+    width: 130px;
     color: #fff;
-    border-width:2px;
-    border-style: solid;
+    background-color: #4E78BC;
     /*width: 6.3rem;*/
-    display: grid;
-    align-items: center;
-    justify-items: center;
   
     /*align-self: center;
     justify-self: center;*/  
   }
 
+  aside ul {
+    color: white;
+    list-style-type: none;
+    width: 100%;
+  }
+
+  aside a {
+    color: white;
+    text-decoration: none;
+  }
+
+  aside a:hover {
+    color: rgb(127, 211, 183);
+  }
+
   footer{
     grid-area: footer;
     color: #fff;
-    border-width:2px;
-    border-style: solid;
+    background-color: #4E78BC;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 5px;
     clear: both;
     /*display: grid;
     align-items: center;
@@ -68,8 +83,8 @@ body {
       grid-area: content;
       float: right;
       width:  calc(100%  - 7.2rem);
-      padding: 5px;
-      background: hsl(240, 100%, 50%);
+      padding: 0.7rem;
+      background: #bfdcdd;
   }
   
   @supports (display: grid){
@@ -95,17 +110,40 @@ body {
   }*/
   
   main > article {
-      background: hsl(240, 100%, 50%);
+      background: hsl(204, 16%, 87%);
       background-image: url('https://source.unsplash.com/daily');
       display: grid;
       align-items: center;
       justify-items: center;
-        
-      border-style: solid;  
-      color: hsl(240, 0%, 100%);
-      border-width: 5px;
-      margin-bottom: 2rem;
-      padding: 1rem;
+      border-width: 0px;
+      margin-bottom: 1rem;
+  }
+
+    /* Style the button that is used to open and close the collapsible content */
+  .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.1rem;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+  .collapsible_content {
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
   }
    
   @media all and (max-width: 575px) {
@@ -120,3 +158,91 @@ body {
    }
   }
   
+
+/* EASY FOOTNOTES FOR WEB PAGES -- CODE LIFTED FROM JAMESRMEYER.COM/OTHERSTUFF/EASY-FOOTNOTES-FOR-WEB-PAGES.HTML */
+
+
+span[class^="footnote"] {
+  display:block;
+}
+
+ /* prevent page load flicker if JavaScript operative */
+.hasJS span[class^="footnote"], .hasJS span[class ='tipContent'] {display:none;}
+
+.unhideTip {
+    display: table-cell !important;
+    position:relative;
+}
+
+.hideTip {
+    display: none;
+    position:relative;
+}
+
+.invis{ /* Hide visually, but will be read by a screen reader
+- to work for all browsers*/
+    border: 0;
+    clip: rect(0,0,0,0);
+    clip-path: inset(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    left:-9999px;
+    top:auto;
+}
+
+/* ######### Formatting of Footnote numbers ######### */
+.fnNum, .fnNumBase{
+  background-color: #FFE680;
+  white-space:nowrap;
+  z-index:400;
+  font-size:0.8em;
+}
+
+.fnNumBase {
+  clear: both;
+  float: left;
+  font-size:0.9em;
+  padding: 0 0.08em 0.1em 0.08em;
+}
+
+.fnNum a, .fnNumBase a {
+  text-decoration:none;
+}
+
+.fnTextBase {
+  padding-left: 2.5em;
+  display:block;
+  font-size:0.9em;
+  padding-bottom:0.312em;
+}
+
+.fnNumIn{
+  vertical-align: 0;
+  position: relative;
+  top: .2ex;
+}
+
+/* ############ Formatting of Tooltips ############## */
+.tipContent{
+  width: auto;
+  max-width:95%;
+  z-index:1080;
+  position:relative; 
+  margin: 0 auto 0.5em auto;
+  padding:0.19em 0.375em 0.23em 0.375em;
+  border:#A09050 solid 0.19em;
+  color:#001D47;
+  background-color:#FEFDED; 
+  box-shadow: 0.5em 1em 1.25em rgba(15, 36, 27, 0.62);
+  text-align:left;
+  border-radius:0.35em;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}

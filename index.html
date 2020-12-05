@@ -11,7 +11,10 @@
         <meta name="description" content="">
         <meta name="author" content="lei_ezz">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/style.css">
+        <base target="_blank">
+        <script>document.documentElement.className = 'hasJS';</script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -19,25 +22,313 @@
         <![endif]-->
 
         <header>
-            <h2>CSS Grid Layout Example</h2>
+            <h2>HTML5 is <b>the Future</b></h2>
           </header>
           
-          <aside>
-          .sidebar
+          <aside class="w3-sidebar w3-light-grey w3-bar-block">
+            <h3 class="w3-bar-item">Open Source Resources</h3>
+            <a href="https://www.w3schools.com/html/default.asp" class="w3-bar-item w3-button">W3 Schools HTML Tutorial</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            <br>
+            <h3 class="w3-bar-item">HTML5 Books</h3>
+            <a href="https://www.w3schools.com/html/default.asp" class="w3-bar-item w3-button">W3 Schools HTML Tutorial</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            <br>
+            <h3 class="w3-bar-item">Useful Youtubers</h3>
+            <a href="https://www.w3schools.com/html/default.asp" class="w3-bar-item w3-button">W3 Schools HTML Tutorial</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
           </aside>
           
           <main>
           <article>
-            <button type="button" class="collapsible">Open Collapsible</button>
-            <div class="content">
-              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            <button type="button" class="collapsible">What is HTML5?</button>
+            <div class="collapsible_content">
+              <p>
+              HTML5 is the newest generation of the HTML (Hypertext Markup Language) standard, which is used to define the appearance and behavior of web pages. HTML5 is sometimes used as an umbrella term to refer to three technologies:
+              <ul>
+                <li>HTML, which provides the structure of a webpage document</li>
+                <li>CSS, which uses the structure defined in HTML to facilitate webpage presentation</li>
+                <li>JavaScript, which is used to add behavior and events to the document</li>
+              </ul>
+
+              This is because while HTML provides an easy-to-understand way to represent documents and content, JavaScript and CSS share the equally important roles of adding functionality and memorability to web pages. In the information age, this is crucial, as developers must provide engaging content to captivate their readers and grow their brand.</p> 
+
+              <p>HTML5 in particular has changed the world of web development and design miraculously, as the release of this standard in 2014 signified a monumentous paradigm shift for the intended use of the web.</p>
+              
+              <p>While previously, HTML was a standard provided to allow developers to put <i>documents</i> on the web, the introduction of its fifth generation made the web the perfect home for distributed applications. The reasons for this paradigm shift include HTML5s increased simplicity to develop with (compared to its predecessor), its fluid maintainability, and the increased flexibility that allows developers to provide device-independent apps that can <b>do</b> more with relative ease.</p>
+
+        
+            </div>
+          </article>
+
+          <article>
+            <button type="button" class="collapsible">So, why HTML5?</button>
+            <div class="collapsible_content">
+              <p>
+                <div style="width:25%; height: auto; float:right; margin: 0.5rem; padding: 0;">
+                  <canvas id="canvasEg" width="150" height="150" style="border: 2px solid #25242b;">
+                    HTML5 canvas tag is unsupported in your browser.
+                  </canvas>
+                  <span>An example Canvas demonstrating gradient generation.</span>
+                </div>
+                HTML5 has a plethora of features that prove advantageous for a wide range of use cases, many of which mark it as the state-of-the-art platform for app development. On a high level, these include: 
+                <ul>
+                  <li><b>Multimedia support:</b> Previously, in order to support audio/video media on the web, developers had to use an external plugin such as <a href="https://get3.adobe.com/flashplayer/update/plugin/">Adobe Flash</a> or <a href="https://www.microsoft.com/Silverlight/">Microsoft Silverlight</a>. This meant developers were reliant on the jurisdiction of the companies providing these plugins, and it was not up to them to add certain features if they felt it necessay. <br> HTML5 obliterated this dependency, and now has provided native media support...
+                    <ul>
+                      <li><b>Canvas:</b> A tool enabling developers to generate images directly on the webpage. Its power lies in its ability to update images continuously, meaning web pages can be programmed to have "user-interactive" graphics. Real-life examples of this include <a href="https://play.famobi.com/color-pixel-art-classic">online games</a>, <a href="https://muro.deviantart.com/">drawing interfaces,</a> and <a href="https://www.arungudelli.com/html5/google-hangout-effects-using-html5-and-javascript-facedetection/">adding special effects to video streamed from the user.</a></li> 
+                      <li><b>Video/Audio:</b> Native, in-browser support for MP4/OGG/WebM videos, and M4A/OGG/WebM/MP3 and WAV audio. Which of these formats is viewable by a user is determined by their browser's codecs and support<span class="footnote"><span class="fnHide"> (Footnote: </span>
+                        Tom Green, Silvia Pfeiffer. <i>Beginning HTML5 Media: Make the Most of the New Video and Audio Standards for the Web. (2015) 2-5.</i>
+                        <span class="fnHide">)</span></span>.</li>
+                      <li><b>SVG:</b><span class="footnote"><span class="fnHide"> (Footnote: </span>
+                        Scalable Vector Graphics
+                        <span class="fnHide">)</span></span>
+                      SVG is a <a href="https://www.w3resource.com/html5-canvas/">XML-defined vector graphic format</a>. Unlike canvas, it produces potentially-complex scalable graphics that maintain their quality at the expense of longer generation time. SVG images are also not saveable through the browser.</li>
+                    </ul>
+                    <div style="width:35%; float:left; margin: 0.5rem; padding: 0.5rem;">
+                      <img src="img/browserScore.png" float="right" alt="An image of the website html5test.com, allowing users of the web to check their browsers support for HTML5 features." style="width: 90%; height: auto;">
+                      <span><a href="https://html5test.com/">https://html5test.com/</a> allows one to check their browsers support for HTML5 features.</span>
+                    </div>
+                  </li>
+                  <br>
+                  <li><b>Offline website functionality:</b> Websites can be designed in such a way that implementation can be stored on the user's machine, allowing them to access the site afterwards regardless of whether or not they are connected to the net.</li>
+                  
+                  <li><p><b>Device independent implementation:</b> Unlike plugins such as Flash and Silverlight, HTML5 is device-independent, meaning apps produced to fit this standard can run on any device that supports it. This brings a wealth of practical advantages to society, bridging the digital divide with the ubiquity of web browsers. It allows anyone with access to the web to access resources such as telemedicine and telelearning.</li>
+                  <li><p><b>Backwards compatibility (Fallbacks):</b> Perhaps the most versatile thing about HTML5 is its support for fallbacks. When a website is loaded by a browser that does not yet support HTML5, a developer-defined <i>fallback</i> can step up to provide users with the same information, encoded in a different way to be displayable by older browsers.</li>
+                </ul>
+              </p>
+              <br>
+      
+              <hr>
+              <div id = "Footnotes"><p class="invis">Footnotes:</p></div>
+            </div>
+          </article>
+
+          <article>
+            <button type="button" class="collapsible">HTML5 in Smart Tourism</button>
+            <div class="collapsible_content">
+              <div style="width:45%; float:right; padding: 0.5rem;">
+                <img src="img/pexels-mateusz-dach-914929.jpg" float="right" alt="An image of someone on vacation. Their feet are up on a hammock, wearing red and white sneakers, with a view of clear blue sky behind." style="width: 90%; height: auto;"> <br>
+                <span>Photo by <a href=https://www.pexels.com/@mateusz-dach-99805?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Mateusz Dach</a> from <a href="https://www.pexels.com/photo/pair-of-red-and-white-low-top-sneakers-914929/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Pexels</a></span>
+                <br>
+              </div>
+              <p>HTML5 has caused uproarious buzz in the digital world, with a plethora of business sectors taking advantage of the new technology. For example:</p>
+              <ul>
+                <li><a href="https://knowtechie.com/online-gaming-sites-banking-on-html5/">Online Gaming</a></li>
+                <li><a href="https://ftnnews.com/technology/40737-how-html5-changed-the-online-casino">Casinos</a></li>
+                <li>
+                  <a href="https://www.cnet.com/news/amazon-adds-html5-web-app-support-for-kindle-fire-android/">Libraries</a>
+                  <span class="footnoteIndustry"><span class="fnHide"> (Footnote: </span>
+                    Stewart C. Baker (2014) Making It Work for Everyone: HTML5 and CSS Level 3 for Responsive, Accessible Design on Your Library's Web Site, Journal of Library & Information Services in Distance Learning, 8:3-4, 118-136, DOI: <a href="http://dx.doi.org/10.1080/1533290X.2014.945825">10.1080/1533290X.2014.945825</a>
+                    <span class="fnHide">)</span></span>
+                </li>
+                <li><a href="https://news.weill.cornell.edu/news/2020/10/telemedicine-has-taken-off-here%E2%80%99s-what-it%E2%80%99s-already-doing%E2%80%94and-how-it-could-get-even">Telemedicine</a></li>
+              </ul>
+              <p>Aside from these major sectors, another sector being revolutionized by HTML5 is the Smart Tourism industry.</p>
+
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/tWU7XxgajS8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              <p>Although "smart" is a bit of a buzzword, Smart Tourism is a very real thing that many countries are vying to achieve, as they recognize its potential for being sustainable and lucrative at the same time. It can be defined as: "A destination facilitating access to tourism and hospitality products, services, spaces and experiences through ICT-based tools. It is a healthy social and cultural environment, which can be found through a focus on the city´s social and human capital. It also implements innovative, intelligent solutions and fosters the development of entrepreneurial businesses and their interconnectedness."
+              <span class="footnoteIndustry"><span class="fnHide"> (Footnote: </span>
+                    <a href="https://travelmassive.com/blog/2019/07/10-best-practices-for-smart-tourism-destinations/"> The European Capital of Smart Tourism (2019)</a>
+                    <span class="fnHide">)</span></span>
+                  </p>
+
+                  <p>In other words, Smart Tourism is when a city offers solutions that make the city more accessible, preserves its environment and culture, and gives tourists the opportunity to partake in the content made available to them when they visit.</p>
+
+              <p>
+                Although not many sources exist that specifically document the usability of HTML5 in this industry, a number of the features mentioned in the previous session prove useful. One of the major driving forces allowing HTML to be so useful is the recent increase in internet accessibility -- especially in Europe, where most of these Smart Cities can be located (for example, the noteworthy Gothenburg, Sweden).
+                
+                <span class="footnoteIndustry"><span class="fnHide"> (Footnote: </span>
+                    <a href="https://tourismteacher.com/smart-tourism/">Smart tourism explained: What, why and where</a>
+                    <span class="fnHide">)</span></span>
+                
+                Cities like these can provide <a href="https://www.link.nyc/">city-wide wi-fi</a> that gives tourists access to the web. Using this accessibility, tourists can plan their journeys in detail and use the resources made available to them to manouvre the city. </p>
+                
+                <p><a href="https://www.msn.com/en-gb/lifestyle/travel/how-malaga-is-using-smart-tourism-to-rebound-from-covid/ar-BB1bwmdB?MSCC=1603695076&pfr=1">The city of Malaga, Spain</a> has implemented the use of HTML to create a website that alerts users to coronavirus activity within the city, allowing potential tourists to plan their visits accordingly. 
+              </p>
+              
+              <p>
+                Another important factor of HTML5 that aides cities in providing these "Smart Tourism" experiences is accessibility. This release prioritizes it, and developers now find it easier than ever to release websites that are useable regardless of the users device, language, browser, internet connectivity, location or their physical or mental ability.
+              </p>
+
+              <p>The <a href="https://www.a11yproject.com/">A11Y Project</a> asserts that website accessibility can be broken down into the pursuit of 4 major goals (POUR):</p>
+              <ol>
+                <li>Perceivable: Users must be able to perceive it in some way, using one or more of their senses.</li>
+                <li>Operable: Users must be able to control UI elements (e.g. buttons must be clickable in some way — mouse, keyboard, voice command, etc.).</li>
+                <li>Understandable: The content must be understandable to its users.</li>
+                <li>Robust: The content must be developed using well-adopted web standards that will work across different browsers, now and in the future.</li>
+              </ol>
+
+              <p>The newly-introduced semantic elements of HTML5 make this a simpler process, allowing for things like screen readers to lay out a websites structure by looking for key tags such as "nav" or "article".
+                <span class="footnoteIndustry"><span class="fnHide"> (Footnote: </span>
+                    Hogan, Brian P. HTML5 and CSS3: Develop With Tomorrows Standards Today. (2011)
+                    <span class="fnHide">)</span></span>
+              </p>
+
+              <p>In the context of smart tourism, this is incredibly helpful. Formatting websites to be accessible ensures that tourists can find their way around cities regardless of disability, and encourages them to come visit as it shows the city are concerned with all potential visitors, not just those that are typically-abled.</p>
+
+              <br>
+              <hr>
+              <div id = "FootnotesIndustry"><p class="invis">Footnotes:</p></div> 
+            </div>
+          </article>
+
+          <article>
+            <button type="button" class="collapsible">The Future of HTML5</button>
+            <div class="collapsible_content">
+              <p>So, where is HTML5 going next? There are several theories.</p>
+              <p>risks, and benefits</p>
+              <p>potential opportunities and challenges</p>
+              <p>HOW to realize the benefits/opportunities</p>
             </div>
           </article>
           </main>
           
           <footer>
-          Copyright 2018
+          Made by 170015016 in December 2020
           </footer>
-    
+
+          <script>
+              var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight){
+                        content.style.maxHeight = null;
+                        } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        } 
+                        }
+                    );
+                }
+          </script>
+          <script>
+            // ############## start of document ready function ###################
+            // This function is to run the JavaScript code once the page is loaded.
+            // If you already have such a function just call the SetupTips function
+            // from your document ready function.
+            
+            document.addEventListener("DOMContentLoaded", function () {
+            
+            SetupTips();
+
+            });
+            // ############## end of document ready function ####################
+
+            // ###### Tooltips function which includes setup of footnotes #######
+            function SetupTips() {
+
+            var fnNumber = 0;
+            var myid = '';
+            var clsStart, clsEnd;
+            var myClassList, myClass;
+            var baseHide, baseFn;
+            var myFn, i = 0, j = 0, len, clL;
+
+            try { 
+
+            var fnotes = document.querySelectorAll('span[class^=footnote]');
+            // the footnotes = all spans which include a class name that begins with "footnote"
+            
+            for (i = 0, len = fnotes.length; i < len; i++) {
+              myFn = fnotes[i];
+              myClassList = myFn.classList;
+              for (j = 0, clL = myClassList.length; j < clL; j++) {
+                myClass = myClassList[j];
+
+                  if (clsEnd !== myClass.substr(8)) { // then we have a new footnotes section
+                    clsEnd = myClass.substr(8); // this identifies the section
+                    // add a hidden link to skip the section
+                    document.getElementById('Footnotes' + clsEnd).insertAdjacentHTML('beforebegin', '<a href="#Footnotes' + clsEnd + '-End"><span class="invis">Skip footnote section</span></a>');
+                    // add the hidden div to where that link goes to
+                    document.getElementById('Footnotes' + clsEnd).insertAdjacentHTML('afterend', '<div class="invis" id="Footnotes' + clsEnd + '-End"></div>');
+                  }
+
+                // now do the footnotes
+                clsStart = myClass.substr(0, 8);
+                if (clsStart === 'footnote') { // we have a footnote
+                  fnNumber = i + 1; // array starts with 0; we want notes to start with 1
+                  myid = 'Fn_' + fnNumber + '_' + clsEnd; // unique footnote reference
+
+                  myFn.id = myid; //set the id of the footnote
+                  myFn.classList.add('hideTip'); // hide the footnote in the text
+                  myFn.classList.add('tipContent'); // add class for styling the tooltip
+                  myFn.setAttribute('role', 'note'); //add ARIA attribute for accessibility
+
+                  // add the footnote reference to the text
+                  myFn.insertAdjacentHTML('beforebegin', '<sup class="fnNum"><a title="Link to footnote" id="' + myid + 'a" onclick="showHide("' + myid + '");return false;">[<span class="invis">Footnote </span><span class="fnNumIn">' + fnNumber + '</span>]</a></sup>');
+                  // insert footnote number and the footnote where the footnotes are required to appear
+                  document.getElementById('Footnotes' + clsEnd).innerHTML += '<p><span class="fnNumBase"><a href="#' + myid + 'a" title="Footnote location">[<span class="invis">Location of footnote </span><span class="fnNumIn">' + fnNumber + '</span>]</a> </span><span role="note" id="' + myid + 'Base" class="fnTextBase">' + myFn.innerHTML + '</span></p>';
+
+                  myFn.classList.remove(myClass); // remove extraneous stuff from the footnote tooltip
+                  myFn.getElementsByClassName('fnHide')[0].insertAdjacentHTML('afterend', fnNumber + ': '); // add the footnote number to the tooltip
+
+                  // remove the "hidden" (Footnote: and ) opening and closing tags of the footnotes in the collective section
+                  baseFn = document.getElementById(myid + 'Base');
+                  baseHide = baseFn.getElementsByClassName('fnHide');
+                  while (baseHide[0]) {
+                    baseFn.removeChild(baseHide[0]);
+                  } 
+                }
+              }
+            }
+
+            // Make the appropriate parts of the footnotes invisible except to screen readers
+            var fnHides = document.getElementsByClassName('fnHide');
+            [].forEach.call(fnHides, function (el) {
+              el.classList.add('invis');
+            });
+
+            } // end of try
+            catch (e) {
+            //catch and just suppress error
+            // alert("fn: " + e);
+            }
+            }
+            // #################  End of Tooltips function ######################
+
+            // ############## Function to set up showing or hiding of text #######
+            function showHide(divID) {
+            var myDiv = document.getElementById(divID);
+            try {
+                if (myDiv.classList.contains('hideTip')) {
+                    myDiv.classList.remove('hideTip');
+                    myDiv.classList.add('unhideTip');
+                    if (divID.substr(0, 3) === 'Fn_') {
+                      // For if tip is a footnote replace number with an x
+                        document.getElementById(divID + 'a').innerHTML = '[<span class="fnNumIn">✖</span>]';
+                    }
+                } else {
+                    myDiv.classList.remove('unhideTip');
+                    myDiv.classList.add('hideTip');
+                    if (divID.substr(0, 3) === 'Fn_') {
+                      // For if tip is a footnote, restore the reference number
+                        document.getElementById(divID + 'a').innerHTML = '[<span class="invis">Footnote </span><span class="fnNumIn">' + divID.substr(3).split('_')[0] + '</span>]';
+                    }
+                }
+            }
+            catch (e) {
+              // alert(e);
+            }
+            }
+            // ######## End of function to set up showing or hiding of text #######
+          </script>
+          <script>
+            var b = document.getElementById("canvasEg");
+            var ctx = b.getContext("2d");
+            // Create gradient
+            var grad = ctx.createRadialGradient(50, 65, 6,  80,50, 90);
+            grad.addColorStop(0, "red");
+            grad.addColorStop(1, "yellow");
+            // Fill with gradient
+            ctx.fillStyle = grad;
+            ctx.fillRect(10, 10, 130, 130);
+          </script> 
     </body>
 </html>
